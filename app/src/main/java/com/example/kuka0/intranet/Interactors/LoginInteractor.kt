@@ -10,11 +10,10 @@ class LoginInteractor:LoginInteractorView {
                 .addOnCompleteListener{
                     if(it.isSuccessful){
                         listener.onSuccess()
-                        listener.showMessage("Bazar jok")
+
                     }
                     else{
                         listener.onFailed(it.exception!!)
-                        listener.showMessage("*(((")
                     }
                 }
 

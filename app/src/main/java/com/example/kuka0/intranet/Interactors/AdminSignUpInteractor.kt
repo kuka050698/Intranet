@@ -18,12 +18,11 @@ class AdminSignUpInteractor:AdminSignUpInteractorView { private var TAG = "New A
                         currentAuthorizingUserUID = it.result.user.uid
                         listener.onSuccess()
                         Log.d(TAG,"Signed Up")
-                        listener.showMessage("Tema")
+
                     }
                     else {
                         listener.onFailed(it.exception!!)
                         Log.d(TAG,"failed")
-                        listener.showMessage("Kuma")
                     }
                 }
 

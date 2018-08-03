@@ -32,7 +32,8 @@
         </activity>
         <activity android:name=".Activities.StudentSignUpActivity" />
         <activity android:name=".Activities.TeahcerSignUpActivity" />
-        <activity android:name=".Activities.AdminSignUpActivity"></activity>
+        <activity android:name=".Activities.AdminSignUpActivity" />
+        
     </application>
 
 </manifest>

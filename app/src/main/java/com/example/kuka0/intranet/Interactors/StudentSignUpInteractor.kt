@@ -29,12 +29,10 @@ class StudentSignUpInteractor:StudentSignUpInteractorView {
                         currentAuthorizingUserUID = it.result.user.uid
                         listener.onSuccess()
                         Log.d(TAG,"Signed Up")
-                        listener.showMessage("Tema")
                     }
                     else {
                         listener.onFailed(it.exception!!)
                         Log.d(TAG,"failed")
-                        listener.showMessage("Kuma")
                     }
                 }
 
