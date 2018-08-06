@@ -18,10 +18,9 @@ class TeahcerSignUpActivity : AppCompatActivity(),TeacherSignUpView {
 
 
     override fun onSuccess() {
-        var intent = Intent(this, MainActivity::class.java)
+        var intent = Intent(this, InsertingCourseActivity::class.java)
         intent.putExtra("username", FirebaseAuth.getInstance().currentUser?.email)
         startActivity(intent)
-
     }
 
     override fun showMessage(message: String) {
@@ -39,7 +38,6 @@ class TeahcerSignUpActivity : AppCompatActivity(),TeacherSignUpView {
 
         TeacherSignUpBtn.setOnClickListener{
             registrationPresenter.signUpTeacher(registerUsernameTeacher.text.toString(), registerPasswordTeacher.text.toString(),registerAge?.text.toString(), register_Degree_Teacher.text.toString())
-            finish()
         }
     }
 }

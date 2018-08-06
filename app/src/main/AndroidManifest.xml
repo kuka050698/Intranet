@@ -23,17 +23,21 @@
         <activity android:name=".Activities.AddItemActivity" />
         <activity
             android:name=".Activities.SplashActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"></activity>
+        <activity android:name=".Activities.StudentSignUpActivity"></activity>
+        <activity android:name=".Activities.TeahcerSignUpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.StudentSignUpActivity" />
-        <activity android:name=".Activities.TeahcerSignUpActivity" />
         <activity android:name=".Activities.AdminSignUpActivity" />
-        
+        <activity android:name=".Activities.InsertingCourseActivity" />
+        <activity android:name=".Activities.StudentMainActivity" />
+        <activity android:name=".Activities.TeacherMainActivity" />
+        <activity android:name=".Activities.AdminMainActivity" />
+        <activity android:name=".Activities.TeachersCourseListActivity"></activity>
     </application>
 
 </manifest>

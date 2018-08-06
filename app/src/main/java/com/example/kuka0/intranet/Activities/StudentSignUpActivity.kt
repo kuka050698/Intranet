@@ -43,7 +43,7 @@ class StudentSignUpActivity() : AppCompatActivity(),StudentSignUpView {
         registrationPresenter = StudentSignUpPresenter(this, StudentSignUpInteractor())
         StudentSignUpBtn.setOnClickListener {
             registrationPresenter.signUp(registerUsername.text.toString(), registerPassword.text.toString(),registerAge.text.toString())
-            finish()
+            //0finish()
         }
     }
 

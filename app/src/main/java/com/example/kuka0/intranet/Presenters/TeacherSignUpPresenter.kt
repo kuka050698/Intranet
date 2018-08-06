@@ -91,10 +91,7 @@ class TeacherSignUpPresenter(private val view:TeacherSignUpView ,private val tea
             return false
         }
         return true
+    }
 
-    }
-    private fun performSavingMode(teacher: Teacher){
-        teacherSignUpInteractor.saveSignedUpTeacher(teacher)
-    }
 
 }

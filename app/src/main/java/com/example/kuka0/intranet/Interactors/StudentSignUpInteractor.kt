@@ -28,7 +28,10 @@ class StudentSignUpInteractor:StudentSignUpInteractorView {
                     if(it.isSuccessful){
                         currentAuthorizingUserUID = it.result.user.uid
                         listener.onSuccess()
-                        Log.d(TAG,"Signed Up")
+                        var uid :String?=null
+                        uid = mAuth.currentUser?.uid
+                        Log.d(TAG,uid)
+
                     }
                     else {
                         listener.onFailed(it.exception!!)
@@ -40,6 +43,7 @@ class StudentSignUpInteractor:StudentSignUpInteractorView {
 
 
     }
+
 
 
 
